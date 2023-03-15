@@ -6,6 +6,7 @@
 #include "UFPSInputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
+#include "UEAdv_FPS/FPSWeaponComponent.h"
 #include "FPSCharacter.generated.h"
 
 UCLASS()
@@ -21,7 +22,9 @@ public:
 
     UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
     UFPSInputComponent* FPSInputComponent;
-    
+
+    UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
+    UFPSWeaponComponent* WeaponComponent;
 protected:
 	virtual void BeginPlay() override;
 

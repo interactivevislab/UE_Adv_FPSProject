@@ -3,11 +3,14 @@
 AUEAdvCharacter::AUEAdvCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
+    
     PlayerCamera = CreateDefaultSubobject<UCameraComponent>("PlayerCamera");
     PlayerCamera->SetupAttachment(GetRootComponent());
     GetMesh()->SetupAttachment(PlayerCamera);
-
+    
     FPSInputComponent = CreateDefaultSubobject<UFPSInputComponent>("InputComponent");
+
+    WeaponComponent = CreateDefaultSubobject<UFPSWeaponComponent>("WeaponComponent");
 }
 
 void AUEAdvCharacter::BeginPlay()
