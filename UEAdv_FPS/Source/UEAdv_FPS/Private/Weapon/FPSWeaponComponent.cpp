@@ -1,4 +1,4 @@
-﻿#include "FPSWeaponComponent.h"
+﻿#include "Weapon/FPSWeaponComponent.h"
 
 #include "GameFramework/Character.h"
 

@@ -6,7 +6,7 @@
 #include "UFPSInputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
-#include "UEAdv_FPS/FPSWeaponComponent.h"
+#include "Weapon/FPSWeaponComponent.h"
 #include "FPSCharacter.generated.h"
 
 UCLASS()
